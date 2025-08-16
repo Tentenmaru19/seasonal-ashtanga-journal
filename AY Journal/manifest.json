@@ -1,0 +1,36 @@
+{
+  "name": "Seasonal Ashtanga Journal",
+  "short_name": "Ashtanga Journal",
+  "description": "Track your seasonal Ashtanga practice and life integration",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f2f2",
+  "theme_color": "#f2f2f2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMzgiIGZpbGw9IiMxYTQxYTYiLz4KPHBhdGggZD0iTTk2IDM4QzY0LjM2OTkgMzggMzggNjQuMzY5OSAzOCA5NkMzOCAxMjcuNjMgNjQuMzY5OSAxNTQgOTYgMTU0QzEyNy42MyAxNTQgMTU0IDEyNy42MyAxNTQgOTZDMTU0IDY0LjM2OTkgMTI3LjYzIDM4IDk2IDM4WiIgZmlsbD0iIzFhNDFhNiIvPgo8cGF0aCBkPSJNOTYgNDhDNjkuNjY5OSA0OCA0OCA2OS42Njk5IDQ4IDk2QzQ4IDEyMi4zMyA2OS42Njk5IDE0NCA5NiAxNDRDMTIyLjMzIDE0NCAxNDQgMTIyLjMzIDE0NCA5NkMxNDQgNjkuNjY5OSAxMjIuMzMgNDggOTYgNDhaIiBmaWxsPSIjZjJmMmYyIi8+CjxwYXRoIGQ9Ik03MiA3MkgxMjBWMjAwSDcyVjIwMFoiIGZpbGw9IiNlYWJmN2YiLz4KPHBhdGggZD0iTTg0IDg0SDk2VjEwOEg4NFYxMDhaIiBmaWxsPSIjOGI0NTEzIi8+Cjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTAwIiBmaWxsPSIjMWExYTFhIi8+CjxwYXRoIGQ9Ik0yNTYgMTAwQzE3Mi4zMzMgMTAwIDEwMCAxNzIuMzMzIDEwMCAyNTZDMTAwIDMzOS42NjcgMTcyLjMzMyA0MTIgMjU2IDQxMkMzMzkuNjY3IDQxMiA0MTIgMzM5LjY2NyA0MTIgMjU2QzQxMiAxNzIuMzMzIDMzOS42NjcgMTAwIDI1NiAxMDBaIiBmaWxsPSIjMWExYTFhIi8+CjxwYXRoIGQ9Ik0yNTYgMTIwQzE5Mi4zMzMgMTIwIDE0MCAxOTIuMzMzIDE0MCAyNTZDMTQwIDMxOS42NjcgMTkyLjMzMyAzNzIgMjU2IDM3MkMzMTkuNjY3IDM3MiAzNzIgMzE5LjY2NyAzNzIgMjU2QzM3MiAxOTIuMzMzIDMxOS42NjcgMTIwIDI1NiAxMjBaIiBmaWxsPSIjZjJmMmYyIi8+CjxwYXRoIGQ9Ik0xOTIgMTkySDMyMFYzMjBIMTkyVjMyMFoiIGZpbGw9IiNlYWJmN2YiLz4KPHBhdGggZD0iTTIyNCAyMjRIMjg4VjI4OEgyMjRWMjg4WiIgZmlsbD0iIzhiNDUxMyIvPgo8L3N2Zz4=",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "productivity"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjgxMiIgdmlld0JveD0iMCAwIDM3NSA4MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNzUiIGhlaWdodD0iODEyIiBmaWxsPSIjZjJmMmYyIi8+Cjx0ZXh0IHg9IjE4Ny41IiB5PSI0MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2Vhc29uYWwgQXNodGFuZ2EgSm91cm5hbDwvdGV4dD4KPC9zdmc+",
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
+

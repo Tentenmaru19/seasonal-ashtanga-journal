@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Seasonal Ashtanga Journal</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Track your seasonal Ashtanga practice and life integration">
+    <meta name="theme-color" content="#f2f2f2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Ashtanga Journal">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFhNDFhNiIvPgo8cGF0aCBkPSJNMTYgNkMxMC40NzcgNiA2IDEwLjQ3NyA2IDE2QzYgMjEuNTIzIDEwLjQ3NyAyNiAxNiAyNkMyMS41MjMgMjYgMjYgMjEuNTIzIDI2IDE2QzI2IDEwLjQ3NyAyMS41MjMgNiAxNiA2WiIgZmlsbD0iIzFhNDFhNiIvPgo8cGF0aCBkPSJNMTYgOEMxMS41ODIgOCA4IDExLjU4MiA4IDE2QzggMjAuNDE4IDExLjU4MiAyNCAxNiAyNEMyMC40MTggMjQgMjQgMjAuNDE4IDI0IDE2QzI0IDExLjU4MiAyMC40MTggOCAxNiA4WiIgZmlsbD0iI2YyZjJmMiIvPgo8cGF0aCBkPSJNMTIgMTJIMjBWMjBIMTJWMjBaIiBmaWxsPSIjZWFiZjdmIi8+CjxwYXRoIGQ9Ik0xNCAxNEgxOFYxOEgxNFYxOFoiIGZpbGw9IiM4YjQ1MTMiLz4KPC9zdmc+">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMyIgZmlsbD0iIzFhNDFhNiIvPgo8cGF0aCBkPSJNOCAzQzUuMjM4NTggMyAzIDUuMjM4NTggMyA4QzMgMTAuNzYxNCA1LjIzODU4IDEzIDggMTNDMTAuNzYxNCAxMyAxMyAxMC43NjE0IDEzIDhDMTMgNS4yMzg1OCAxMC43NjE0IDMgOCAzWiIgZmlsbD0iIzFhNDFhNiIvPgo8cGF0aCBkPSJNOCA0QzUuNzkwODYgNCA0IDUuNzkwODYgNCA4QzQgMTAuMjA5MSA1Ljc5MDg2IDEyIDggMTJDMTAuMjA5MSAxMiAxMiAxMC4yMDkxIDEyIDhDMTIgNS43OTA4NiAxMC4yMDkxIDQgOCA0WiIgZmlsbD0iI2YyZjJmMiIvPgo8cGF0aCBkPSJNNiA2SDEwVjEwSDZWMjBaIiBmaWxsPSIjZWFiZjdmIi8+CjxwYXRoIGQ9Ik03IDdIOFY5SDdWOVoiIGZpbGw9IiM4YjQ1MTMiLz4KPC9zdmc+">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiByeD0iMzUiIGZpbGw9IiMxYTQxYTYiLz4KPHBhdGggZD0iTTkwIDM1QzU5LjY3OTQgMzUgMzUgNTkuNjc5NCAzNSA5MEMzNSAxMjAuMzIxIDU5LjY3OTQgMTQ1IDkwIDE0NUMxMjAuMzIxIDE0NSAxNDUgMTIwLjMyMSAxNDUgOTBDMTQ1IDU5LjY3OTQgMTIwLjMyMSAzNSA5MCAzNVoiIGZpbGw9IiMxYTQxYTYiLz4KPHBhdGggZD0iTTkwIDQ1QzY1LjM2NDkgNDUgNDUgNjUuMzY0OSA0NSA5MEM0NSAxMTQuNjM1IDY1LjM2NDkgMTM1IDkwIDEzNUMxMTQuNjM1IDEzNSAxMzUgMTE0LjYzNSAxMzUgOTBDMTM1IDY1LjM2NDkgMTE0LjYzNSA0NSA5MCA0NVoiIGZpbGw9IiNmMmYyZjIiLz4KPHBhdGggZD0iTTY3LjUgNjcuNUgxMTIuNVYxMTIuNUg2Ny41VjExMi41WiIgZmlsbD0iI2VhYmY3ZiIvPgo8cGF0aCBkPSJNNzguNzUgNzguNzVIMTAxLjI1VjEwMS4yNUg3OC43NVYxMDEuMjVaIiBmaWxsPSIjOGI0NTEzIi8+Cjwvc3ZnPg==">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overscroll-behavior: none;
+            touch-action: manipulation;
+        }
+        
+        /* Mobile-optimized styles */
+        .mobile-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .mobile-card {
+            background-color: #87ceeb;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px #ffffff;
+            border: 1px solid #ffffff;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mobile-nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+        }
+        
+        .mobile-tab {
+            flex: 1;
+            padding: 0.75rem 0.5rem;
+            border-radius: 0.75rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            touch-action: manipulation;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-tab.active {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        
+        .mobile-tab:not(.active) {
+            color: #6b7280;
+        }
+        
+        .mobile-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.75rem;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+        
+        .mobile-input:focus {
+            outline: none;
+            border-color: #0ea5e9;
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+        
+        .mobile-button {
+            background-color: #aab5f8;
+            color: white;
+            font-weight: 600;
+            padding: 0.875rem 1.5rem;
+            border-radius: 0.75rem;
+            border: none;
+            font-size: 16px;
+            transition: all 0.2s;
+            touch-action: manipulation;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .mobile-button:hover {
+            background-color: #87ceeb;
+            transform: translateY(-1px);
+        }
+        
+        .mobile-button:active {
+            transform: translateY(0);
+        }
+        
+        .mobile-range {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #ededed;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        
+        .mobile-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0ea5e9;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .mobile-range::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0ea5e9;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .season-spring {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+            color: #166534;
+        }
+        
+        .season-summer {
+            background-color: #fefce8;
+            border-color: #fde047;
+            color: #a16207;
+        }
+        
+        .season-autumn {
+            background-color: #fff7ed;
+            border-color: #fed7aa;
+            color: #c2410c;
+        }
+        
+        .season-winter {
+            background-color: #eff6ff;
+            border-color: #bfdbfe;
+            color: #1e40af;
+        }
+        
+        .tab-active {
+            background-color: #eabf7f;
+            color: #8b4513;
+        }
+        
+        /* Mobile-specific improvements */
+        @media (max-width: 768px) {
+            .mobile-container {
+                padding: 0 0.75rem;
+            }
+            
+            .mobile-card {
+                padding: 1rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .mobile-nav {
+                padding: 0 0.75rem;
+            }
+        }
+        
+        /* Safe area for notched devices */
+        @supports (padding: max(0px)) {
+            .mobile-nav {
+                padding-left: max(0.75rem, env(safe-area-inset-left));
+                padding-right: max(0.75rem, env(safe-area-inset-right));
+            }
+            
+            .mobile-container {
+                padding-left: max(0.75rem, env(safe-area-inset-left));
+                padding-right: max(0.75rem, env(safe-area-inset-right));
+            }
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f2f2f2;
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loading.show {
+            display: flex;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e5e7eb;
+            border-top: 4px solid #0ea5e9;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-black-50 via-white to-blue-50 min-h-screen">
+    <!-- Loading Screen -->
+    <div id="loading" class="loading show">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="app" class="min-h-screen">
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <div class="mobile-container">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center space-x-3">
+                        <h1 class="text-lg font-bold text-black-600">
+                            ASHTANGA JOURNAL
+                        </h1>
+                    </div>
+                    <div id="current-season" class="flex items-center space-x-2 px-3 py-1.5 rounded-lg season-winter text-sm">
+                        <span>🌙</span>
+                        <span class="font-medium">Winter</span>
+                    </div>
+                </div>
+                
+                <!-- Mobile Tab Navigation -->
+                <div class="flex space-x-1 pb-2">
+                    <button id="dashboard-tab" class="mobile-tab active">
+                        <span class="text-lg mr-1"></span>
+                        <span class="hidden sm:inline">Dashboard</span>
+                    </button>
+                    <button id="journal-tab" class="mobile-tab">
+                        <span class="text-lg mr-1"></span>
+                        <span class="hidden sm:inline">Journal</span>
+                    </button>
+                    <button id="insights-tab" class="mobile-tab">
+                        <span class="text-lg mr-1"></span>
+                        <span class="hidden sm:inline">Insights</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="mobile-container py-4">
+            <!-- Dashboard Content -->
+            <div id="dashboard-content" class="space-y-4">
+                <!-- Personal Profile Section -->
+                <div class="mobile-card">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="relative">
+                            <div id="profile-avatar" class="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center overflow-hidden">
+                                <img id="profile-image" src="" alt="Profile" class="w-full h-full object-cover hidden">
+                                <span id="profile-emoji" class="text-black-600 text-2xl font-bold">🧘‍♀️</span>
+                            </div>
+                            <button id="change-photo" class="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs hover:bg-blue-600">
+                                📷
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-xl font-bold text-gray-900">Welcome back!</h2>
+                            <p class="text-gray-600">Track your seasonal Ashtanga journey</p>
+                        </div>
+                        <button id="edit-profile" class="mobile-button text-sm px-3 py-2">
+                            <span>✏️</span>
+                            <span class="hidden sm:inline">Edit</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Personal Details Form (Hidden by default) -->
+                    <div id="profile-form" class="hidden space-y-3">
+                        <!-- Profile Picture Upload -->
+                        <div class="text-center">
+                            <div class="relative inline-block">
+                                <div id="form-avatar" class="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center overflow-hidden mx-auto mb-3">
+                                    <img id="form-profile-image" src="" alt="Profile" class="w-full h-full object-cover hidden">
+                                    <span id="form-profile-emoji" class="text-white text-3xl font-bold">🧘‍♀️</span>
+                                </div>
+                                <label for="profile-picture" class="absolute -bottom-1 -right-1 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm hover:bg-blue-600 cursor-pointer">
+                                    📷
+                                </label>
+                            </div>
+                            <input type="file" id="profile-picture" accept="image/*" class="hidden">
+                            <p class="text-xs text-gray-500">Tap to upload profile picture</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="user-name" class="mobile-input" placeholder="Your name" value="Ashtanga Practitioner">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Sex</label>
+                                <select id="user-sex" class="mobile-input">
+                                    <option value="">Select</option>
+                                    <option value="female" selected>Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
+                                <input type="date" id="user-dob" class="mobile-input" value="1994-01-01">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                                <input type="number" id="user-age" class="mobile-input" placeholder="Age" value="30" readonly>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Height (cm)</label>
+                                <input type="number" id="user-height" class="mobile-input" placeholder="Height in cm" value="165">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Weight (kg)</label>
+                                <input type="number" id="user-weight" class="mobile-input" placeholder="Weight in kg" value="60">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Experience Level</label>
+                                <select id="experience-level" class="mobile-input">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate" selected>Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="teacher">Teacher</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Practice Years</label>
+                                <input type="number" id="practice-years" class="mobile-input" placeholder="Years" value="3">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Goals</label>
+                            <textarea id="practice-goals" class="mobile-input" rows="2" placeholder="What are your Ashtanga goals?">Improve flexibility, build strength, and find inner peace through consistent practice.</textarea>
+                        </div>
+                        <div class="flex justify-end space-x-2">
+                            <button id="cancel-profile" class="btn-secondary text-sm px-3 py-2">
+                                Cancel
+                            </button>
+                            <button id="save-profile" class="mobile-button text-sm px-3 py-2">
+                                <span>💾</span>
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Personal Info Display (Visible by default) -->
+                    <div id="profile-display" class="space-y-3">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+                            <div class="text-center p-2 bg-blue-50 rounded-lg">
+                                <p class="font-medium text-blue-900" id="display-name">Ashtanga Practitioner</p>
+                                <p class="text-blue-600">Name</p>
+                            </div>
+                            <div class="text-center p-2 bg-green-50 rounded-lg">
+                                <p class="font-medium text-green-900" id="display-sex">Female</p>
+                                <p class="text-green-600">Sex</p>
+                            </div>
+                            <div class="text-center p-2 bg-purple-50 rounded-lg">
+                                <p class="font-medium text-purple-900" id="display-age">30</p>
+                                <p class="text-purple-600">Age</p>
+                            </div>
+                            <div class="text-center p-2 bg-orange-50 rounded-lg">
+                                <p class="font-medium text-orange-900" id="display-height">165 cm</p>
+                                <p class="text-orange-600">Height</p>
+                            </div>
+                            <div class="text-center p-2 bg-pink-50 rounded-lg">
+                                <p class="font-medium text-pink-900" id="display-weight">60 kg</p>
+                                <p class="text-pink-600">Weight</p>
+                            </div>
+                            <div class="text-center p-2 bg-indigo-50 rounded-lg">
+                                <p class="font-medium text-indigo-900" id="display-level">Intermediate</p>
+                                <p class="text-indigo-600">Level</p>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="text-sm text-gray-600 mb-1">Current Goals:</p>
+                            <p class="text-sm text-gray-900" id="display-goals">Improve flexibility, build strength, and find inner peace through consistent practice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="mobile-card">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <span class="text-blue-600 text-lg">📊</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600">Total</p>
+                                <p class="text-xl font-bold text-gray-900">3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-green-100 rounded-lg">
+                                <span class="text-green-600 text-lg">⏰</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600">Avg Time</p>
+                                <p class="text-xl font-bold text-gray-900">75m</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-yellow-100 rounded-lg">
+                                <span class="text-yellow-600 text-lg">🧠</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600">Energy</p>
+                                <p class="text-xl font-bold text-gray-900">7.0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-card">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-2 bg-pink-100 rounded-lg">
+                                <span class="text-pink-600 text-lg">❤️</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600">Mood</p>
+                                <p class="text-xl font-bold text-gray-900">8.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Practices -->
+                <div class="mobile-card">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Recent Practices</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg season-winter">
+                                    <span>🌙</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900 text-sm">Jan 15, 2024</p>
+                                    <p class="text-xs text-gray-600">90 minutes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <span class="flex items-center space-x-1">
+                                    <span>🧠</span>
+                                    <span>8/10</span>
+                                </span>
+                                <span class="flex items-center space-x-1">
+                                    <span>❤️</span>
+                                    <span>9/10</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 rounded-lg season-winter">
+                                    <span>🌙</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900 text-sm">Jan 14, 2024</p>
+                                    <p class="text-xs text-gray-600">75 minutes</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3 text-xs">
+                                <span class="flex items-center space-x-1">
+                                    <span>🧠</span>
+                                    <span>7/10</span>
+                                </span>
+                                <span class="flex items-center space-x-1">
+                                    <span>❤️</span>
+                                    <span>8/10</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journal Content (Hidden by default) -->
+            <div id="journal-content" class="hidden space-y-4">
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Practice Data -->
+                    <div class="mobile-card">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-3 flex items-center space-x-2">
+                            <span>📊</span>
+                            <span>Practice Data</span>
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Date</label>
+                                <input type="date" id="practice-date" class="mobile-input" value="2024-01-16">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Duration (minutes)</label>
+                                <input type="number" id="practice-duration" class="mobile-input" value="60" min="15" max="180">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Energy Level (1-10)</label>
+                                <input type="range" id="energy-level" min="1" max="10" value="7" class="mobile-range">
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>Low</span>
+                                    <span id="energy-value">7/10</span>
+                                    <span>High</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Focus Level (1-10)</label>
+                                <input type="range" id="focus-level" min="1" max="10" value="7" class="mobile-range">
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>Distracted</span>
+                                    <span id="focus-value">7/10</span>
+                                    <span>Focused</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Mood (1-10)</label>
+                                <input type="range" id="mood-level" min="1" max="10" value="7" class="mobile-range">
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>Poor</span>
+                                    <span id="mood-value">7/10</span>
+                                    <span>Excellent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physical & Life Data -->
+                    <div class="mobile-card">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-3 flex items-center space-x-2">
+                            <span>❤️</span>
+                            <span>Physical & Life Data</span>
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Flexibility (1-10)</label>
+                                <input type="range" id="flexibility-level" min="1" max="10" value="6" class="mobile-range">
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>Stiff</span>
+                                    <span id="flexibility-value">6/10</span>
+                                    <span>Flexible</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Strength (1-10)</label>
+                                <input type="range" id="strength-level" min="1" max="10" value="6" class="mobile-range">
+                                <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                    <span>Weak</span>
+                                    <span id="strength-value">6/10</span>
+                                    <span>Strong</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Sleep (hours)</label>
+                                <input type="number" id="sleep-hours" class="mobile-input" value="7" min="0" max="12" step="0.5">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Weather</label>
+                                <select id="weather" class="mobile-input">
+                                    <option value="">Select weather</option>
+                                    <option value="sunny">Sunny</option>
+                                    <option value="cloudy">Cloudy</option>
+                                    <option value="rainy">Rainy</option>
+                                    <option value="snowy">Snowy</option>
+                                    <option value="windy">Windy</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Nutrition Notes</label>
+                                <textarea id="nutrition" class="mobile-input" rows="2" placeholder="What did you eat today? How did it affect your practice?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes and Life Events -->
+                    <div class="mobile-card">
+                        <h2 class="text-lg font-semibold text-gray-900 mb-3">Reflections & Life Events</h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Practice Notes</label>
+                                <textarea id="practice-notes" class="mobile-input" rows="4" placeholder="How was your practice today? Any insights, challenges, or breakthroughs?"></textarea>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Life Events & Integration</label>
+                                <textarea id="life-events" class="mobile-input" rows="3" placeholder="What's happening in your life? How does it relate to your practice?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="flex justify-end pt-2">
+                        <button id="save-entry" class="mobile-button">
+                            <span>💾</span>
+                            <span>Save Entry</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Content (Hidden by default) -->
+            <div id="insights-content" class="hidden space-y-4">
+                <!-- Seasonal Patterns -->
+                <div class="mobile-card">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Seasonal Patterns</h2>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="p-3 rounded-lg border border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="p-2 rounded-lg" style="background-color: #3b82f620;">
+                                    <span style="color: #3b82f6;">🌙</span>
+                                </div>
+                                <h3 class="font-semibold text-gray-900">Winter</h3>
+                            </div>
+                            
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Energy:</span>
+                                    <span class="font-medium">6.2/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Mood:</span>
+                                    <span class="font-medium">7.1/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Duration:</span>
+                                    <span class="font-medium">65m</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-lg border border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="p-2 rounded-lg" style="background-color: #10b98120;">
+                                    <span style="color: #10b981;">☀️</span>
+                                </div>
+                                <h3 class="font-semibold text-gray-900">Spring</h3>
+                            </div>
+                            
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Energy:</span>
+                                    <span class="font-medium">7.8/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Mood:</span>
+                                    <span class="font-medium">8.3/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Duration:</span>
+                                    <span class="font-medium">75m</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-lg border border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="p-2 rounded-lg" style="background-color: #f59e0b20;">
+                                    <span style="color: #f59e0b;">☀️</span>
+                                </div>
+                                <h3 class="font-semibold text-gray-900">Summer</h3>
+                            </div>
+                            
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Energy:</span>
+                                    <span class="font-medium">8.5/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Mood:</span>
+                                    <span class="font-medium">8.7/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Duration:</span>
+                                    <span class="font-medium">80m</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-lg border border-gray-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="p-2 rounded-lg" style="background-color: #f9731620;">
+                                    <span style="color: #f97316;">🍂</span>
+                                </div>
+                                <h3 class="font-semibold text-gray-900">Autumn</h3>
+                            </div>
+                            
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Energy:</span>
+                                    <span class="font-medium">7.1/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Mood:</span>
+                                    <span class="font-medium">7.5/10</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Duration:</span>
+                                    <span class="font-medium">70m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="mobile-card">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Seasonal Recommendations</h2>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-blue-50 rounded-lg">
+                            <p class="text-sm text-blue-800">
+                                <strong>Winter:</strong> Your energy is lower but mood remains stable. Consider shorter, more focused practices with emphasis on internal heat generation.
+                            </p>
+                        </div>
+                        <div class="p-3 bg-green-50 rounded-lg">
+                            <p class="text-sm text-green-800">
+                                <strong>Spring:</strong> Your highest energy and mood scores. Perfect time for longer practices and exploring new asanas.
+                            </p>
+                        </div>
+                        <div class="p-3 bg-yellow-50 rounded-lg">
+                            <p class="text-sm text-yellow-800">
+                                <strong>Summer:</strong> Peak performance season. Maintain hydration and consider early morning practices to beat the heat.
+                            </p>
+                        </div>
+                        <div class="p-3 bg-orange-50 rounded-lg">
+                            <p class="text-sm text-orange-800">
+                                <strong>Autumn:</strong> Transition period with balanced energy. Focus on grounding practices and reflection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Hide loading screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading').classList.remove('show');
+            }, 500);
+        });
+
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Hide all content
+            document.getElementById('dashboard-content').classList.add('hidden');
+            document.getElementById('journal-content').classList.add('hidden');
+            document.getElementById('insights-content').classList.add('hidden');
+            
+            // Remove active class from all tabs
+            document.getElementById('dashboard-tab').classList.remove('active');
+            document.getElementById('journal-tab').classList.remove('active');
+            document.getElementById('insights-tab').classList.remove('active');
+            
+            // Add active class to clicked tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Show selected content
+            document.getElementById(tabName + '-content').classList.remove('hidden');
+        }
+
+        // Event listeners for tabs
+        document.getElementById('dashboard-tab').addEventListener('click', () => switchTab('dashboard'));
+        document.getElementById('journal-tab').addEventListener('click', () => switchTab('journal'));
+        document.getElementById('insights-tab').addEventListener('click', () => switchTab('insights'));
+
+        // Range input value updates
+        function updateRangeValue(inputId, valueId) {
+            const input = document.getElementById(inputId);
+            const value = document.getElementById(valueId);
+            input.addEventListener('input', (e) => {
+                value.textContent = e.target.value + '/10';
+            });
+        }
+
+        updateRangeValue('energy-level', 'energy-value');
+        updateRangeValue('focus-level', 'focus-value');
+        updateRangeValue('mood-level', 'mood-value');
+        updateRangeValue('flexibility-level', 'flexibility-value');
+        updateRangeValue('strength-level', 'strength-value');
+
+        // Profile picture upload functionality
+        document.getElementById('profile-picture').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imageUrl = e.target.result;
+                    
+                    // Update form avatar
+                    document.getElementById('form-profile-image').src = imageUrl;
+                    document.getElementById('form-profile-image').classList.remove('hidden');
+                    document.getElementById('form-profile-emoji').classList.add('hidden');
+                    
+                    // Update main avatar
+                    document.getElementById('profile-image').src = imageUrl;
+                    document.getElementById('profile-image').classList.remove('hidden');
+                    document.getElementById('profile-emoji').classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Profile form functionality
+        document.getElementById('edit-profile').addEventListener('click', () => {
+            document.getElementById('profile-form').classList.remove('hidden');
+            document.getElementById('profile-display').classList.add('hidden');
+            document.getElementById('edit-profile').classList.add('hidden');
+        });
+
+        document.getElementById('cancel-profile').addEventListener('click', () => {
+            document.getElementById('profile-form').classList.add('hidden');
+            document.getElementById('profile-display').classList.remove('hidden');
+            document.getElementById('edit-profile').classList.remove('hidden');
+        });
+
+        document.getElementById('save-profile').addEventListener('click', () => {
+            // Update display values
+            document.getElementById('display-name').textContent = document.getElementById('user-name').value;
+            document.getElementById('display-sex').textContent = document.getElementById('user-sex').value;
+            document.getElementById('display-age').textContent = document.getElementById('user-age').value;
+            document.getElementById('display-height').textContent = document.getElementById('user-height').value + ' cm';
+            document.getElementById('display-weight').textContent = document.getElementById('user-weight').value + ' kg';
+            document.getElementById('display-level').textContent = document.getElementById('experience-level').value;
+            document.getElementById('display-goals').textContent = document.getElementById('practice-goals').value;
+            
+            // Hide form and show display
+            document.getElementById('profile-form').classList.add('hidden');
+            document.getElementById('profile-display').classList.remove('hidden');
+            document.getElementById('edit-profile').classList.remove('hidden');
+            
+            // Show success message
+            alert('Profile updated successfully!');
+        });
+
+        // Auto-calculate age from date of birth
+        document.getElementById('user-dob').addEventListener('change', function() {
+            const dob = new Date(this.value);
+            const today = new Date();
+            const age = today.getFullYear() - dob.getFullYear();
+            const monthDiff = today.getMonth() - dob.getMonth();
+            
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+                age--;
+            }
+            
+            document.getElementById('user-age').value = age;
+        });
+
+        // Save entry functionality
+        document.getElementById('save-entry').addEventListener('click', () => {
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            
+            setTimeout(() => {
+                alert('Entry saved successfully! (This is a demo - in the full version, data would be saved to localStorage or a database)');
+                document.getElementById('loading').classList.remove('show');
+            }, 1000);
+        });
+
+        // Determine current season
+        function getCurrentSeason() {
+            const month = new Date().getMonth();
+            const seasons = ['Winter', 'Spring', 'Summer', 'Autumn'];
+            const currentSeasonIndex = Math.floor((month + 1) % 12 / 3);
+            return seasons[currentSeasonIndex];
+        }
+
+        // Update season display
+        const currentSeason = getCurrentSeason();
+        const seasonElements = document.querySelectorAll('#current-season, .season-winter');
+        seasonElements.forEach(element => {
+            element.innerHTML = `<span>${currentSeason === 'Spring' || currentSeason === 'Summer' ? '☀️' : currentSeason === 'Autumn' ? '🍂' : '🌙'}</span><span class="font-medium">${currentSeason}</span>`;
+            element.className = element.className.replace('season-winter', `season-${currentSeason.toLowerCase()}`);
+        });
+
+        // PWA Installation prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            // You can show an install button here
+        });
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 
